@@ -37,7 +37,10 @@ jobs:
 
       # 提交并推送更改
       - name: Commit and push changes
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # 将 GH_TOKEN 作为环境变量传递
         run: |
           git add ipv6.txt
           git commit -m "Update IPv6 address [ci skip]" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/253698520/AddressesAPI.git
+          
