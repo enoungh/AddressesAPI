@@ -1,46 +1,43 @@
-name: Update IPv6 File
+name: Update IPv6 Addresses
 
 on:
   schedule:
-    - cron: "0 */6 * * *" # 每6小时运行一次
-  workflow_dispatch:  # 允许手动触发
+    - cron: '0 */6 * * *' # 每6小时运行一次
+  workflow_dispatch: # 允许手动触发
+
+env:
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
 jobs:
   update-ipv6:
     runs-on: ubuntu-latest
-
     steps:
-      # 检出仓库内容
       - name: Checkout repository
-        uses: actions/checkout@v3
-
-      # 设置 Python 环境
-      - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/checkout@v2
         with:
-          python-version: "3.8"
+          token: ${{ env.GH_TOKEN }}
 
-      # 安装依赖（根据需要安装额外依赖）
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt  # 如果有依赖，可以使用 requirements.txt 文件
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      # 运行脚本，生成 ipv6.txt 文件
-      - name: Run process_ipv6.py
+      - name: Run Python script
         run: python process_ipv6.py
 
-      # 配置 Git 用户信息
-      - name: Set up Git configuration
+      - name: Commit and push if changes
         run: |
-          git config --global user.name "GitHub Action Bot"
-          git config --global user.email "actions@github.com"
-
-      # 提交并推送更改
-      - name: Commit and push changes
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # 将 GH_TOKEN 作为环境变量传递
-        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add ipv6.txt
-          git commit -m "Update IPv6 address [ci skip]" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/253698520/AddressesAPI.git
-          
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Update IPv6 addresses [$(date)]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
