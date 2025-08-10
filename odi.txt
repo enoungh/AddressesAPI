@@ -1,57 +1,50 @@
-104.16.0.0
-104.17.0.0
-104.18.0.0
-104.19.0.0
-104.20.0.0
-104.21.0.0
-104.22.0.0
-104.24.0.0
-104.25.0.0
-104.26.0.0
-104.27.0.0
-172.66.0.0
-172.67.0.0
-162.159.0.0
-[2606:4700::0]:443#ipv6
-icook.tw:2053#icook.tw
-cloudflare.cfgo.cc#cloudflare.cfgo.cc
-visa.cn#visa.cn
-visa.com:8443#visa.com
-cis.visa.com:2053#cis.visa.com
-africa.visa.com:2083#africa.visa.com
-visa.com.sg:2087#visa.com.sg
-visaeurope.at:2096#visaeurope.at
-shopify.com#shopify
-time.is#time.is
-icook.hk#icook.hk
-ip.sb#ip.sb
-skk.moe#skk.moe
-gur.gov.ua#gur.gov.ua
-zsu.gov.ua#zsu.gov.ua
-japan.com#japan.com
-malaysia.com#malaysia.com
-russia.com#russia.com
-csgo.com#csgo.com
-iplocation.io#iplocation.io
-wto.org#wto.org
-xs.wxtv.cc#xs.wxtv.cc
-visa.com#visa.com
-whatismyip.com#whatismyip.com
-hostmonit.com#hostmonit.com
-shopify.com#shopify.com
-icook.hk#icook.hk
-icook.tw#icook.tw
-ip.sb#ip.sb
-japan.com#japan.com
-malaysia.com#malaysia.com
-russia.com#russia.com
-singapore.com#singapore.com
-skk.moe#skk.moe
-www.visa.com.sg#www.visa.com.sg
-www.visa.com.hk#www.visa.com.hk
-www.visa.com.tw#www.visa.com.tw
-www.visa.co.jp#www.visa.co.jp
-www.visakorea.com#www.visakorea.com
-www.gco.gov.qa#www.gco.gov.qa
-www.gov.se#www.gov.se
-www.gov.ua#www.gov.ua
+1. 104.16.0.0
+2. 104.17.0.0
+3. 104.18.0.0
+4. 104.19.0.0
+5. 104.20.0.0
+6. 104.21.0.0
+7. 104.22.0.0
+8. 104.24.0.0
+9. 104.25.0.0
+10. 104.26.0.0
+11. 104.27.0.0
+12. 172.66.0.0
+13. 172.67.0.0
+14. 162.159.0.0
+15. [2606:4700::0]:443#ipv6
+16. icook.tw:2053#icook.tw
+17. cloudflare.cfgo.cc#cloudflare.cfgo.cc
+18. visa.cn#visa.cn
+19. visa.com:8443#visa.com
+20. cis.visa.com:2053#cis.visa.com
+21. africa.visa.com:2083#africa.visa.com
+22. visa.com.sg:2087#visa.com.sg
+23. visaeurope.at:2096#visaeurope.at
+24. shopify.com#shopify
+25. time.is#time.is
+26. icook.hk#icook.hk
+27. ip.sb#ip.sb
+28. skk.moe#skk.moe
+29. gur.gov.ua#gur.gov.ua
+30. zsu.gov.ua#zsu.gov.ua
+31. japan.com#japan.com
+32. malaysia.com#malaysia.com
+33. russia.com#russia.com
+34. csgo.com#csgo.com
+35. iplocation.io#iplocation.io
+36. wto.org#wto.org
+37. xs.wxtv.cc#xs.wxtv.cc
+38. visa.com#visa.com
+39. whatismyip.com#whatismyip.com
+40. hostmonit.com#hostmonit.com
+41. shopify.com#shopify.com
+42. singapore.com#singapore.com
+43. www.visa.com.sg#www.visa.com.sg
+44. www.visa.com.hk#www.visa.com.hk
+45. www.visa.com.tw#www.visa.com.tw
+46. www.visa.co.jp#www.visa.co.jp
+47. www.visakorea.com#www.visakorea.com
+48. www.gco.gov.qa#www.gco.gov.qa
+49. www.gov.se#www.gov.se
+50. www.gov.ua#www.gov.ua
