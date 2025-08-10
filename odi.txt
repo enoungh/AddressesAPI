@@ -39,7 +39,6 @@ visa.com#visa.com
 whatismyip.com#whatismyip.com
 hostmonit.com#hostmonit.com
 shopify.com#shopify.com
-time.is#time.is
 icook.hk#icook.hk
 icook.tw#icook.tw
 ip.sb#ip.sb
