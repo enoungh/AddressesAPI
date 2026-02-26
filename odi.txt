@@ -14,6 +14,11 @@
 162.159.0.0
 [2606:4700::0]:443#ipv6
 icook.tw:2053#icook.tw
+www.visa.cn#Visa中国
+mfa.gov.ua#乌克兰外交部
+www.shopify.com#Shopify官方
+store.ubi.com#Ubisoft
+staticdelivery.nexusmods.com#NexusMods
 cloudflare.cfgo.cc#cloudflare.cfgo.cc
 visa.cn#visa.cn
 visa.com:8443#visa.com
